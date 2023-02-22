@@ -18,7 +18,16 @@
 
 body {
     min-height: 100vh;
+    background-image: url("images/bg-pattern-top-mobile.svg"),
+        url("images/bg-pattern-bottom-mobile.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+}
 
+@media (min-width:768px) {
+    body {
+        background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    }
 }
 
 section {
